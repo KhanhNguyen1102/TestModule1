@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let vowel = ["a","o","e","u","i"]
+    let string = prompt("Nhập vào một chuỗi bất kì")
+    function countVowelWord(string){
+        let arr = string.split("")
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (vowel.indexOf(arr[i]) !== -1){
+                count++
+            }
+        }
+        document.write("Chuỗi nhập vào có " + count + " kí tự nguyên âm ")
+    }
+    countVowelWord(string);
+</script>
+</body>
+</html>
